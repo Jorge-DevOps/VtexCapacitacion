@@ -1,0 +1,109 @@
+.infoCardContainer--info-card-home {
+    width: 50vh;
+    height: 250px;
+}
+
+.infoCardTextContainer--info-card-home {
+    display: flex;
+    width: auto;
+    height: 250px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 86%;
+}
+
+.infoCardContainer--info-card-home {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoCardHeadline--info-card-home {
+    color: white;
+    text-align: center;
+    width: 15rem;
+}
+
+.sliderTrack--layout-card-example {
+    width: 537%;
+    height: 280px;
+}
+
+.container--sticky-header {
+    background-color: #000;
+}
+
+.container {
+    z-index: 1;
+}
+
+.productImage {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 27rem;
+}
+
+.productBrand {
+    padding: 1rem;
+    color: white;
+    font-size: 50px;
+}
+
+.productNameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.currencyContainer {
+    color: white;
+}
+
+.skuSelectorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%
+}
+
+.thumbImg {
+    max-width: 5rem;
+}
+
+.productImagesGallerySwiperContainer {
+    max-height: 27rem;
+}
+
+.productImagesGallerySlide {
+    width: 100%;
+    margin: 0;
+}
+
+.carouselContainer {
+    max-height: 27rem;
+}
+
+.figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.productImageTag {
+    max-height: 34vh !important;
+    margin: 0 auto;
+}
+
+.skuSelectorSubcontainer--tallas {
+    margin: 1rem auto;
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+}
+.skuSelectorSubcontainer--color{
+    margin: 1rem auto;
+}

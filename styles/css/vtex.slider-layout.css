@@ -1,0 +1,10 @@
+.slide--layout-carousel{
+
+}
+
+.slide--layout-carousel .slideChildrenContainer {
+    padding: 1rem;
+}
+.slide--layout-carousel .sliderTrack--carousel {
+    margin-top: 3rem;
+}

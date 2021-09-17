@@ -1,0 +1,72 @@
+{
+  // "store.search": {
+  //   "blocks": [
+  //     "flex-layout.row"
+  //   ]
+  // },
+  // "search-result-layout": {
+  //   "blocks": [
+  //     "search-result-layout.desktop",
+  //     "search-result-layout.mobile",
+  //     "search-not-found-layout"
+  //   ]
+  // },
+  // "search-result-layout.desktop": {
+  //   "children": [
+  //     "breadcrumb.search",
+  //     "search-title.v2",
+  //     "total-products.v2",
+  //     "search-fetch-previous",
+  //     "search-content",
+  //     "filter-navigator.v3",
+  //     "order-by.v2",
+  //     "search-fetch-more"
+  //   ]
+  // },
+  // "search-result-layout.desktop#filter": {
+  //   "children": [
+  //     "breadcrumb.search",
+  //     "search-title.v2",
+  //     "total-products.v2",
+  //     "search-fetch-previous",
+  //     "search-content",
+  //     "filter-navigator.v3",
+  //     "order-by.v2",
+  //     "search-fetch-more"
+  //   ]
+  // },
+  // "flex-layout.row": {
+  //   "children": [
+  //     "flex-layout.col","flex-layout.col#1"
+  //   ]
+  // },
+  // "flex-layout.col": {
+  //   "children": [
+  //     // "search-result-layout.desktop#filter",
+  //     "info-card#rethink"
+  //   ]
+  // },
+  // "flex-layout.col#1": {
+  //   "children": [
+  //     // "search-result-layout"
+  //     "info-card#rethink"
+  //   ]
+  // },
+
+
+
+  // "info-card#rethink": {
+  //   "props": {
+  //     "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
+  //     "isFullModeStyle": true,
+  //     "headline": "Time to rethink your kitchen",
+  //     "callToActionText": "Discover",
+  //     "textPosition": "center"
+  //   }
+  // },
+  // "rich-text#deletar": {
+  //   "props": {
+  //     "text": "I'll be deleted soon"
+  //   }
+  // }
+}

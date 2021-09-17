@@ -1,0 +1,33 @@
+.flexRow {
+    background-color: #181818;
+}
+
+.flexRow--container-especification {
+    width: 100%;
+    background-color: #181818;
+}
+
+.flexRow--especification-product {
+    background-color: #181818;
+}
+.flexColChild{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.flexRowContent--container-especification {
+    background-color: #181818;
+
+}
+.flexRowContent--container-headerModal .stretchChildrenWidth:nth-child(1n){
+    width: 40rem !important;
+}
+.flexRowContent--container-headerModal .stretchChildrenWidth:nth-child(2n){
+    width: 2rem !important;
+}
+.flexRow--container-headerModal{
+    height: 2.8rem;
+    width: 100%;
+}

@@ -1,0 +1,58 @@
+{
+  "store.product": {
+    "props": {
+      "blockClass": "container-product"
+    },
+    "children": [
+      "breadcrumb",
+      "flex-layout.row#main",
+      "rich-text#masVendido",
+      "shelf#home"
+    ]
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.col#right": {
+    "children": [
+      "product-name",
+      "product-price",
+      "buy-button"
+    ]
+  },
+
+
+  
+  "rich-text#masVendido": {
+    "props": {
+      "text": "Productos relacionados",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": "title-home"
+    }
+  },
+  "shelf#home": {
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  },
+  "product-summary-image": {
+    "props": {
+      "showBadge": true,
+      "height": 220,
+      "blockClass": "summary-products"
+    }
+  }
+}

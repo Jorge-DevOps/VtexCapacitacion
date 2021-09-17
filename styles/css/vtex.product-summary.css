@@ -1,0 +1,56 @@
+.element {
+    display: flex;
+    justify-content: space-between;
+}
+
+.element {
+    border: solid 2px #000000;
+}
+
+.element:hover {
+    border: solid 2px #9b9b9b;
+    transition: 1s;
+}
+
+.element:hover .buyButton {
+    transition: 1s;
+}
+
+.vtex-product-summary-2-x-buyButtonbuy .vtex-button {
+    border-color: black;
+}
+
+.vtex-button {
+    background-color: black;
+    border-color: black;
+    color: black;
+}
+
+.productNameContainer {
+    color: white;
+    font-weight: 500;
+}
+
+.SKUSelectorContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.valueWrapper {
+    color: white;
+}
+
+.price_sellingPrice--price-modal {
+    color: white;
+    border-left: solid 2.6px #aa1a1a;
+}
+
+.productPriceClass--price-showcase .sellingPrice {
+    color: white;
+}
+
+.productPriceClass--price-showcase .sellingPrice .currencyCode {
+    color: #3cff00;
+}

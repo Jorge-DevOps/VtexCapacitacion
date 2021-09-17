@@ -1,0 +1,101 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["sticky-layout#desktop"]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://jorge-rangel.dev/assets/icons/logo.svg",
+      "width": "80"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"],
+    "props": {
+      "blockClass": "layout-mobile"
+    }
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"],
+    "props": {
+      "blockClass": "sticky-mobile"
+    }
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "responsive-layout.phone",
+      "responsive-layout.tablet",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "layoutrow-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "responsive-layout.phone": {
+    "props": {
+      "blockClass": "responsive-layoutClass"
+    },
+    "children": ["category-menu#mobile"]
+  },
+  "responsive-layout.tablet": {
+    "children": ["category-menu#tablet"]
+  },
+  "category-menu#mobile": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [],
+      "sortSubcategories": "name",
+      "blockClass": "menu-navMobile",
+      "mobileMode": "true"
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#Home",
+      "responsive-layout.tablet#Home",
+      "responsive-layout.phone#Home"
+    ]
+  },
+
+  //-----Layouts
+  "responsive-layout.desktop#Home": {
+    "children": [
+      "rich-text#titleHome",
+      "category-menu#desktop",
+      "slider-layout#bannersDesktop-Tablet",
+      "slider-layout#category",
+      "rich-text#titleShowCase",
+      "list-context.product-list"
+    ]
+  },
+  "responsive-layout.tablet#Home": {
+    "children": [
+      "rich-text#titleHome",
+      "category-menu#tablet",
+      "slider-layout#bannersDesktop-Tablet",
+      "slider-layout#category",
+      "rich-text#titleShowCase",
+      "list-context.product-list"
+    ]
+  },
+  "responsive-layout.phone#Home": {
+    "children": [
+      "rich-text#titleHome",
+      "category-menu#mobile",
+      "slider-layout#bannersDesktop-Tablet",
+      "slider-layout#category",
+      "rich-text#titleShowCase",
+      "list-context.product-list"
+    ]
+  },
+
+  //-----Elements
+  "rich-text#titleHome": {
+    "props": {
+      "text": "Sphere Technology",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": "title-home"
+    }
+  },
+
+  //-----menu
+  "category-menu#desktop": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [],
+      "sortSubcategories": "name",
+      "blockClass": "menu-nav"
+    }
+  },
+
+  "category-menu#tablet": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [],
+      "sortSubcategories": "name",
+      "blockClass": "menu-nav",
+      "mobileMode": "true"
+    }
+  },
+
+  //-----Banners
+  "slider-layout#bannersDesktop-Tablet": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "layout-carousel"
+    },
+    "children": ["image#1", "image#2", "image#3"]
+  },
+  "image#1": {
+    "props": {
+      "src": "https://fanaticosdelhardware.com/wp-content/uploads/2018/12/es-banner-superfamilia-1127x300-2.jpg",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+  "image#2": {
+    "props": {
+      "src": "https://pcprozone.com/img/cms/BANNERGAMINGZONE.jpg",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+  "image#3": {
+    "props": {
+      "src": "https://www.tecnofullchile.cl/images/baner-msi2.png",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+
+  //-----Categorys
+  "slider-layout#category": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-home"
+    },
+    "children": ["info-card#1", "info-card#2", "info-card#3", "info-card#4"]
+  },
+  "image#4": {
+    "props": {
+      "src": "https://fanaticosdelhardware.com/wp-content/uploads/2018/12/es-banner-superfamilia-1127x300-2.jpg",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+  "image#5": {
+    "props": {
+      "src": "https://pcprozone.com/img/cms/BANNERGAMINGZONE.jpg",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+  "image#6": {
+    "props": {
+      "src": "https://www.tecnofullchile.cl/images/baner-msi2.png",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+
+  //-----Category
+
+  "info-card#1": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storage-asset.msi.com/global/picture/news/2019/mb/paris-games-week-20191030-1.jpg",
+      "headline": "Computación",
+      "callToActionText": "Abrir",
+      "callToActionUrl": "/Computación",
+      "blockClass": ["info-card-home", "info-card-image"],
+      "textAlignment": "center"
+    }
+  },
+  "info-card#2": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://www.enfasys.net/wp-content/uploads/2019/10/Trust-Gaming.jpg",
+      "headline": "Perifericos y Accesorios",
+      "callToActionText": "ABRIR",
+      "callToActionUrl": "/Computación/Accesorios",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#3": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://infonegocios.biz/uploads/samsung-celular-tablet-1.jpg",
+      "headline": "Celulares y Tablets",
+      "callToActionText": "ABRIR",
+      "callToActionUrl": "/Celulares",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#4": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://linkcomputer.com.co/wp-content/uploads/2021/08/2-banner-impresora-1024x512.png",
+      "headline": "Impresoras",
+      "callToActionText": "ABRIR",
+      "callToActionUrl": "/Impresoras",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  //-----ShowCase
+  "rich-text#titleShowCase": {
+    "props": {
+      "text": "LOS MAS VENDIDOS",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": ["title", "title-products"]
+    }
+  },
+
+  "list-context.product-list": {
+    "props": {
+      "blockClass": "listProduct-home"
+    },
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout"]
+  },
+  "product-summary.shelf#home": {
+    "props": {
+      "blockClass": "listProduct-home"
+    },
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price#showcase",
+      "product-summary-buy-button",
+      "modal-trigger#quickview"
+    ]
+  },
+
+  "rich-text#Showcase": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Detalles",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  "product-summary-price#showcase": {
+    "props": {
+      "blockClass": "price-showcase"
+    }
+  },
+
+  //-----Modal
+  "modal-trigger#quickview": {
+    "props": {
+      "blockClass": "modal-home"
+    },
+    "children": ["rich-text#Showcase", "modal-layout#quickview"]
+  },
+  "modal-layout#quickview": {
+    "props": {
+      "blockClass": "layoutModal-home"
+    },
+    "children": [
+      "flex-layout.row#text",
+      "product-images",
+      "flex-layout.row#modal",
+      "add-to-cart-button#modal"
+    ]
+  },
+  //Flex title and close --Modal
+  "flex-layout.row#text": {
+    "props": {
+      "blockClass": "container-headerModal"
+    },
+    "children": [
+      "flex-layout.col#leftHeaderModal",
+      "flex-layout.col#rightHeaderModal"
+    ]
+  },
+  "flex-layout.col#leftHeaderModal": {
+    "props": {
+      "blockClass": "container-leftHeaderModal"
+    },
+    "children": ["product-summary-name"]
+  },
+  "flex-layout.col#rightHeaderModal": {
+    "props": {
+      "blockClass": "container-rightHeaderModal"
+    },
+    "children": ["modal-actions.close#modalHouse"]
+  },
+  "rich-text#modal": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "X",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "Close-modal"
+    }
+  },
+  "add-to-cart-button#modal": {
+    "props": {
+      "blockClass": "btnBuy-modal"
+    }
+  },
+  "flex-layout.row#modal": {
+    "props": {
+      "blockClass": "container-especification"
+    },
+    "children": ["flex-layout.col#leftModal", "flex-layout.col#rightModal"]
+  },
+  "flex-layout.col#rightModal": {
+    "children": ["product-summary-quantity", "product-summary-price#modal"],
+    "props": {
+      "blockClass": "container-skuSelector"
+    }
+  },
+  "flex-layout.col#leftModal": {
+    "children": ["product-summary-sku-selector"],
+    "props": {
+      "blockClass": "container-quantity"
+    }
+  },
+  "product-summary-price#modal": {
+    "props": {
+      "blockClass": "price-modal"
+    }
+  },
+
+  "modal-actions.close#modalHouse": {
+    "props": {
+      "blockClass": "btn-CloseModal",
+      "label": "X"
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      // "menu-item#category-clothing",
+      // "menu-item#category-decoration",
+      // "menu-item#custom-sale"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  }
+}

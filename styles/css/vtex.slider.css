@@ -1,0 +1,7 @@
+.sliderFrame .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.sliderFrame{
+    padding: 2% 0;
+}

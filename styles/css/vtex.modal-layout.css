@@ -1,0 +1,46 @@
+ .modal--layoutModal-home{
+    max-width: 70rem;
+    max-height: 90vh;
+    color: white;
+    left: 50%!important;
+    inset: 0 50vw !important;
+    top: 3rem!important;
+}
+.backdrop--layoutModal-home{
+    background-color: #585858;
+}
+
+.paper--layoutModal-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 44rem;
+    background-color: #181818;
+    border: solid 1px white;
+    border-radius: 12px;
+}
+ 
+.triggerContainer--modal-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.paper--layoutModal-home :global(.vtex-button) {
+    width: 20rem;
+    margin: 1rem;
+} 
+.closeButton--btn-CloseModal {
+    border: none;
+    background-color: #e95252;
+}
+
+.closeButton--btn-CloseModal .closeButtonLabel{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0;
+    padding: 0 5px;
+}
