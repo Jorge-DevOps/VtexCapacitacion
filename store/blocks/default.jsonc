@@ -1,8 +1,17 @@
 {
   "store.orderplaced": {
-    "blocks": ["order-placed"]
+    "props":{
+      "blockClass":"order-placed"
+    },
+    "blocks": ["order-placed#home"]
   },
-
+  "order-placed#home":{
+    
+    "props":{
+      "blockClass":"component-orderplaced"
+    }
+  },
+  
   "store.account": {
     "blocks": ["my-account"],
     "parent": {

@@ -32,7 +32,7 @@
     "children": [
       "rich-text#titleHome",
       "category-menu#mobile",
-      "slider-layout#bannersDesktop-Tablet",
+      "slider-layout#bannersMobile",
       "slider-layout#category",
       "rich-text#titleShowCase",
       "list-context.product-list"
@@ -75,6 +75,41 @@
   },
 
   //-----Banners
+  "slider-layout#bannersMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "layout-carousel"
+    },
+    "children": ["image#1.1", "image#2.1", "image#3.1"]
+  },
+  "image#1.1": {
+    "props": {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvtHL7G6NOzZl82_ljs0od_Wb5GF5Ua6C-A&usqp=CAU",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+  "image#2.1": {
+    "props": {
+      "src": "https://hajaan.com/wp-content/uploads/2020/11/Gaming-PC-for-Main-Banner.png",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+  "image#3.1": {
+    "props": {
+      "src": "https://t4.ftcdn.net/jpg/03/98/61/57/360_F_398615737_dQ1LJ8i6pDpyQIk4VrppIEgcb7T882kb.jpg",
+      "maxHeight": 530,
+      "width": 1700
+    }
+  },
+
   "slider-layout#bannersDesktop-Tablet": {
     "props": {
       "itemsPerPage": {
@@ -109,7 +144,6 @@
       "width": 1700
     }
   },
-
   //-----Categorys
   "slider-layout#category": {
     "props": {
@@ -211,7 +245,6 @@
       "blockClass": ["title", "title-products"]
     }
   },
-
   "list-context.product-list": {
     "props": {
       "blockClass": "listProduct-home"
@@ -224,23 +257,32 @@
       "blockClass": "listProduct-home"
     },
     "children": [
-      "product-summary-image",
+      "product-summary-image#ShowCaseHome",
       "product-summary-name",
       "product-rating-inline",
       "product-summary-space",
       "product-summary-price#showcase",
-      "product-summary-buy-button",
+      "add-to-cart-button#showcase",
       "modal-trigger#quickview"
     ]
   },
-
+  "add-to-cart-button#showcase":{
+    "props":{
+      "blockClass":"btn-buy"
+    }
+  },
+  "product-summary-image#ShowCaseHome":{
+    "props": {
+      "blockClass":"image-product"
+    }
+  },
   "rich-text#Showcase": {
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "Detalles",
+      "text": "DETALLES",
       "textColor": "c-on-emphasis",
-      "font": "t-heading-5",
+      "font": "t-heading-7",
       "blockClass": "help-message"
     }
   },
@@ -255,7 +297,9 @@
     "props": {
       "blockClass": "modal-home"
     },
-    "children": ["rich-text#Showcase", "modal-layout#quickview"]
+    "children": [
+      "rich-text#Showcase"
+      , "modal-layout#quickview"]
   },
   "modal-layout#quickview": {
     "props": {

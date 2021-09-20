@@ -31,3 +31,44 @@
     height: 2.8rem;
     width: 100%;
 }
+.flexRowContent--product-especification .stretchChildrenWidth{
+    opacity: 0;
+}
+
+@media (min-width: 640px)  and (max-width: 1025px) {
+    .flexRowContent--layout-rowFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    .flexRowContent--layout-rowFooter .stretchChildrenWidth{
+        width: auto !important;
+    }
+    .flexRowContent--layout-rowFooter .stretchChildrenWidth:nth-child(4n){
+        position: relative;
+        bottom: 6rem;
+        grid-row-start: 1;
+        grid-column-start: 4;
+    }
+    .flexRowContent--layout-rowFooter .stretchChildrenWidth:nth-child(5n){
+        position: relative;
+        bottom: 3rem;
+        grid-row-start: 1;
+        grid-column-start: 4;
+        
+    }   
+    .flexRowContent--layout-rowFooter .stretchChildrenWidth:nth-child(6n){
+        position: relative;
+        top: 2rem;
+        grid-row-start: 1;
+        grid-column-start: 4;
+    }   
+    .flexRowContent--layout-rowFooter .stretchChildrenWidth:nth-child(7n){
+        position: relative;
+        top: 5rem;
+        grid-row-start: 1;
+        grid-column-start: 4;
+    }   
+    
+}

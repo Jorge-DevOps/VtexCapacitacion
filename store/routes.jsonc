@@ -8,8 +8,8 @@
     "store.custom#terminos": {
       "path": "/terminos-condiciones"
     },
-    "store.custom#faqs": {
-      "path": "/faqs"
+    "store.custom#contact": {
+      "path": "/contact"
     },
     "store.custom#search": {
       "path": "/search"

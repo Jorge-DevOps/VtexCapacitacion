@@ -2,3 +2,13 @@
     height: auto;
     padding: 1rem;
 }
+.socialNetworksContainer--social-container{
+    justify-content: space-around;
+    margin: 1rem;
+}
+.acceptedPaymentMethodContainer--payment-container{
+    justify-content: space-around;
+}
+.socialNetworkWrapper--social-container{
+    width: 100%;
+}

@@ -1,195 +1,281 @@
 {
-    "footer": {
-      "blocks": [
-        "footer-layout.desktop",
-        // "footer-layout.tablet",
-        "footer-layout.mobile"
-      ]
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  //---Layouts
+  "footer-layout.desktop": {
+    "props": {
+      "blockClass": "layout-desktop"
     },
-  
-    //---Layouts
-    "footer-layout.desktop": {
-      "children": ["flex-layout.row#footer-desktop"]
+    "children": ["flex-layout.row#footer-desktop"]
+  },
+  "footer-layout.mobile": {
+    "props": {
+      "blockClass": "layout-mobile"
     },
-    // "footer-layout.tablet": {
-    //   "children": ["flex-layout.row#footer-desktop"]
-    // },
-    "footer-layout.mobile": {
-      "children": ["flex-layout.row#footer-desktop"]
+    "children": ["flex-layout.row#footer-mobile"]
+  },
+
+  "flex-layout.row#footer-mobile": {
+    "props": {
+      "blockClass": "layout-rowFooter"
     },
-  
-    "flex-layout.row#footer-desktop": {
-      "children": [
-        "flex-layout.col#article1",
-        "flex-layout.col#article2",
-        "flex-layout.col#article3",
-        "social-networks",
-        "accepted-payment-methods",
-        "powered-by"
-      ]
+    "children": [
+      "flex-layout.col#article1",
+      "flex-layout.col#article2",
+      "flex-layout.col#article3",
+      "social-networks#mobile",
+      "accepted-payment-methods#mobile",
+      "image#ePartner",
+      "image#vtex"
+    ]
+  },
+
+  "flex-layout.row#footer-desktop": {
+    "props": {
+      "blockClass": "layout-rowFooter"
     },
-  
-    "flex-layout.col#article1": {
-      "props": {
-        "blockClass": "s"
-      },
-      "children": [
-        "rich-text#title1",
-        "rich-text#subtitle1.1",
-        "rich-text#subtitle1.2",
-        "rich-text#subtitle1.3"
-      ]
+    "children": [
+      "flex-layout.col#article1",
+      "flex-layout.col#article2",
+      "flex-layout.col#article3",
+      "flex-layout.col#article4"
+    ]
+  },
+
+  "flex-layout.col#article1": {
+    "props": {
+      "blockClass": "article-list"
     },
-  
-    "flex-layout.col#article2": {
-      "props": {
-        "blockClass": "s"
-      },
-      "children": [
-        "rich-text#title2",
-        "rich-text#subtitle2.1",
-        "rich-text#subtitle2.2",
-        "rich-text#subtitle2.3"
-      ]
+    "children": [
+      "rich-text#title1",
+      "rich-text#subtitle1.1",
+      "rich-text#subtitle1.2",
+      "rich-text#subtitle1.3"
+    ]
+  },
+
+  "flex-layout.col#article2": {
+    "props": {
+      "blockClass": "article-list"
     },
-  
-    "flex-layout.col#article3": {
-      "props": {
-        "blockClass": "s"
-      },
-      "children": [
-        "rich-text#title3",
-        "rich-text#subtitle3.1",
-        "rich-text#subtitle3.2",
-        "rich-text#subtitle3.3"
-      ]
+    "children": [
+      "rich-text#title2",
+      "rich-text#subtitle2.1",
+      "rich-text#subtitle2.2",
+      "rich-text#subtitle2.3"
+    ]
+  },
+
+  "flex-layout.col#article3": {
+    "props": {
+      "blockClass": "article-list"
     },
-  
-    //Article-list1
-    "rich-text#title1": {
-      "props": {
-        "text": "**SOBRE NOSOTROS**",
-        "font": "t-heading-5",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
+    "children": [
+      "rich-text#title3",
+      "rich-text#subtitle3.1",
+      "rich-text#subtitle3.2",
+      "rich-text#subtitle3.3"
+    ]
+  },
+
+  "flex-layout.col#article4": {
+    "props": {
+      "blockClass": "article-list"
     },
-    "rich-text#subtitle1.1": {
-      "props": {
-        "text": "Quienes Somos?",
-        "textColor": "white",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
+    "children": [
+      "flex-layout.row#rowPayment",
+      "flex-layout.row#rowSocial",
+      "flex-layout.row#rowPowerBy"
+    ]
+  },
+
+  "flex-layout.row#rowSocial": {
+    "props": {
+      "blockClass": "rowSocial"
     },
-    "rich-text#subtitle1.2": {
-      "props": {
-        "text": "Nuestra Historia",
-        "textColor": "c-on-base",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
+    "children": ["social-networks#desktop"]
+  },
+  "flex-layout.row#rowPayment": {
+    "props": {
+      "blockClass": "rowPayment"
     },
-  
-    "rich-text#subtitle1.3": {
-      "props": {
-        "text": "Nuestra Informacion",
-        "textColor": "c-on-base",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
+    "children": ["accepted-payment-methods#desktop"]
+  },
+  "flex-layout.row#rowPowerBy": {
+    "props": {
+      "blockClass": "rowPowerBy"
     },
-  
-    //Article-list2
-    "rich-text#title2": {
-      "props": {
-        "text": "**CATEGORIAS DESTACADAS**",
-        "font": "t-heading-5",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-    "rich-text#subtitle2.1": {
-      "props": {
-        "text": "Procesadores",
-        "textColor": "white",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-    "rich-text#subtitle2.2": {
-      "props": {
-        "text": "Memorias Ram",
-        "textColor": "c-on-base",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-  
-    "rich-text#subtitle2.3": {
-      "props": {
-        "text": "Laptops",
-        "textColor": "c-on-base",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-  
-    //---Article-list3
-    "rich-text#title3": {
-      "props": {
-        "text": "**SERVICIO AL CLIENTE**",
-        "font": "t-heading-5",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-    "rich-text#subtitle3.1": {
-      "props": {
-        "text": "Politica de entregas",
-        "textColor": "white",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-    "rich-text#subtitle3.2": {
-      "props": {
-        "text": "Politica devoluciones",
-        "textColor": "c-on-base",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-  
-    "rich-text#subtitle3.3": {
-      "props": {
-        "text": "Nuestra informacion",
-        "textColor": "c-on-base",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER"
-      }
-    },
-  
-    "flex-layout.row#footer-mobile": {
-      "children": ["social-networks", "accepted-payment-methods", "powered-by"]
-    },
-  
-    "social-networks": {
-      "props": {
-        "socialNetworks": [
-          { "url": "https://facebook.com/foo", "name": "Facebook" },
-          { "url": "https://twitter.com/foo", "name": "Twitter" },
-          { "url": "https://facebook.com/foo", "name": "Instagram" },
-          { "url": "https://twitter.com/foo", "name": "Youtube" }
-        ],
-        "showInColor": "True"
-      }
-    },
-  
-    "accepted-payment-methods": {
-      "props": {
-        "paymentMethods": ["mastercard", "visa", "diners club"]
-      }
+    "children": ["image#vtex", "image#ePartner"]
+  },
+
+  //Article-list1
+  "rich-text#title1": {
+    "props": {
+      "text": "**SOBRE NOSOTROS**",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-title"
+    }
+  },
+  "rich-text#subtitle1.1": {
+    "props": {
+      "text": "¿Quienes Somos?",
+      "textColor": "white",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+  "rich-text#subtitle1.2": {
+    "props": {
+      "text": "Nuestra Historia",
+      "textColor": "c-on-base",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+
+  "rich-text#subtitle1.3": {
+    "props": {
+      "text": "Nuestra Informacion",
+      "textColor": "c-on-base",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+
+  //Article-list2
+  "rich-text#title2": {
+    "props": {
+      "text": "**CATEGORIAS DESTACADAS**",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-title"
+    }
+  },
+  "rich-text#subtitle2.1": {
+    "props": {
+      "text": "Procesadores",
+      "textColor": "white",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+  "rich-text#subtitle2.2": {
+    "props": {
+      "text": "Memorias Ram",
+      "textColor": "c-on-base",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+
+  "rich-text#subtitle2.3": {
+    "props": {
+      "text": "Laptops",
+      "textColor": "c-on-base",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+
+  //---Article-list3
+  "rich-text#title3": {
+    "props": {
+      "text": "**SERVICIO AL CLIENTE**",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-title"
+    }
+  },
+  "rich-text#subtitle3.1": {
+    "props": {
+      "text": "Politica de entregas",
+      "textColor": "white",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+  "rich-text#subtitle3.2": {
+    "props": {
+      "text": "Politica devoluciones",
+      "textColor": "c-on-base",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+
+  "rich-text#subtitle3.3": {
+    "props": {
+      "text": "Nuestra informacion",
+      "textColor": "c-on-base",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-subtitle"
+    }
+  },
+
+  "social-networks#mobile": {
+    "props": {
+      "blockClass": "social-container",
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" },
+        { "url": "https://facebook.com/foo", "name": "Instagram" },
+        { "url": "https://twitter.com/foo", "name": "Youtube" }
+      ],
+      "showInColor": "True"
+    }
+  },
+
+  "social-networks#desktop": {
+    "props": {
+      "blockClass": "social-container",
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" },
+        { "url": "https://facebook.com/foo", "name": "Instagram" },
+        { "url": "https://twitter.com/foo", "name": "Youtube" }
+      ],
+      "showInColor": "True"
+    }
+  },
+  "accepted-payment-methods#mobile": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"],
+      "blockClass": "payment-container"
+    }
+  },
+  "accepted-payment-methods#desktop": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"],
+      "blockClass": "payment-container"
+    }
+  },
+
+  "image#ePartner": {
+    "props": {
+      "src": "https://saetasport.vteximg.com.br/arquivos/footer-epartner.png",
+      "blockClass": "epartner"
+    }
+  },
+  "image#vtex": {
+    "props": {
+      "src": "https://saetasport.vteximg.com.br/arquivos/footer-vtex.png",
+      "blockClass": "epartner"
     }
   }
-  
+}
+

@@ -1,56 +1,98 @@
-.element {
-    display: flex;
-    justify-content: space-between;
+.element--listProduct-home {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px #000000;
+  margin: 1rem;
+  border-radius: 12px;
+  padding: 0;
+  height: 27rem;
 }
 
-.element {
-    border: solid 2px #000000;
+.element--listProduct-home:hover {
+  border: solid 2px #9b9b9b;
+  transition: 1s;
 }
 
-.element:hover {
-    border: solid 2px #9b9b9b;
-    transition: 1s;
-}
-
-.element:hover .buyButton {
-    transition: 1s;
+.element--listProduct-home:hover {
+  transition: 1s;
 }
 
 .vtex-product-summary-2-x-buyButtonbuy .vtex-button {
-    border-color: black;
+  border-color: black;
 }
 
 .vtex-button {
-    background-color: black;
-    border-color: black;
-    color: black;
+  background-color: black;
+  border-color: black;
+  color: black;
 }
 
 .productNameContainer {
-    color: white;
-    font-weight: 500;
+  color: white;
+  font-weight: 500;
 }
 
 .SKUSelectorContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .valueWrapper {
-    color: white;
+  color: white;
 }
 
 .price_sellingPrice--price-modal {
-    color: white;
-    border-left: solid 2.6px #aa1a1a;
+  color: white;
+  border-left: solid 2.6px #aa1a1a;
 }
 
 .productPriceClass--price-showcase .sellingPrice {
-    color: white;
+  color: white;
 }
 
 .productPriceClass--price-showcase .sellingPrice .currencyCode {
-    color: #3cff00;
+  color: #3cff00;
+}
+.element--listProduct-home:hover .imageNormal {
+  width: 100%;
+  filter: opacity(0.5);
+}
+.imageWrapper--image-product .imageNormal {
+  width: 100%;
+}
+.element--listProduct-home .imageContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 18rem;
+}
+.image--image-product {
+  border-radius: 10px;
+}
+.element--listProduct-home:hover :global(.vtex-button) {
+  opacity: 1;
+}
+
+.buyButton--btn-buy :global(.vtex-button) {
+  width: 3rem;
+}
+.element--listProduct-home :global(.vtex-button) {
+  position: relative;
+  opacity: 0;
+  transition: 1s;
+  bottom: 15rem;
+  background-color: #afafaf;
+  border: none;
+  width: 10rem;
+  left: 3rem;
+}
+
+.element--listProduct-home :global(.vtex-button):hover {
+  background-color: #545454;
+
+}
+.element--listProduct-home:hover :global(.vtex-modal-layout-0-x-triggerContainer--modal-home) {
+  opacity: 1;
 }

@@ -22,10 +22,24 @@
  
 .triggerContainer--modal-home{
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
+    height: 41px;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+    bottom: 22rem;
+    background-color: #afafaf;
+    border: none;
+    width: 10rem;
+    left: 3rem;
+    border-radius: 5px;
+}
+
+.triggerContainer--modal-home:hover {
+    background-color: #545454;
+
 }
 
 .paper--layoutModal-home :global(.vtex-button) {
@@ -43,4 +57,7 @@
     font-size: 25px;
     margin: 0;
     padding: 0 5px;
+}
+.element--listProduct-home:hover .triggerContainer--modal-home {
+    opacity: 1;
 }
