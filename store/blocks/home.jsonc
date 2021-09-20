@@ -51,6 +51,60 @@
   },
 
   //-----menu
+
+  "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Shop",
+            "text": "Shop"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "About Us"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#shop": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#shop"] // Defining a submenu
+  },
+  "vtex.menu@2.x:submenu#shop": {
+    "children": ["vtex.menu@2.x:menu#submenushop"]
+  },
+  "vtex.menu@2.x:menu#submenushop": {
+    "children": ["menu-item#shop"]
+  },
+
   "category-menu#desktop": {
     "props": {
       "showAllDepartments": true,
@@ -266,14 +320,14 @@
       "modal-trigger#quickview"
     ]
   },
-  "add-to-cart-button#showcase":{
-    "props":{
-      "blockClass":"btn-buy"
+  "add-to-cart-button#showcase": {
+    "props": {
+      "blockClass": "btn-buy"
     }
   },
-  "product-summary-image#ShowCaseHome":{
+  "product-summary-image#ShowCaseHome": {
     "props": {
-      "blockClass":"image-product"
+      "blockClass": "image-product"
     }
   },
   "rich-text#Showcase": {
@@ -297,9 +351,7 @@
     "props": {
       "blockClass": "modal-home"
     },
-    "children": [
-      "rich-text#Showcase"
-      , "modal-layout#quickview"]
+    "children": ["rich-text#Showcase", "modal-layout#quickview"]
   },
   "modal-layout#quickview": {
     "props": {

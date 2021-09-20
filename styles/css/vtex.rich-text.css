@@ -13,3 +13,9 @@
 .wrapper--text-subtitle{
     color: white;
 }
+
+.container--title-home{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-tecnologia-futura-circuito-cibernetico_42077-5144.jpg?size=626&ext=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
